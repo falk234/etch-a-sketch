@@ -1,7 +1,7 @@
 const container= document.querySelector('#container');
 const button=document.querySelector('button');
+let number = 20; //initial grid
 
-let number = 20;
 
 const newGrid = (number) => {
     const container= document.querySelector('#container');
@@ -18,16 +18,14 @@ const newGrid = (number) => {
     }
 }
 
-newGrid(number);
-
-const squares = document.querySelectorAll('.square');
-
-squares.forEach(square => {
-    square.addEventListener('mouseenter', () => {
-        square.classList.add('hover');
+const hoverSquares = () => {
+    const squares = document.querySelectorAll('.square');
+    squares.forEach(square => {
+        square.addEventListener('mouseenter', () => {
+            square.classList.add('hover');
+        })
     })
-})
-
+}
 
 button.addEventListener('click', () => {
     console.log("Funktioniert!");
@@ -43,31 +41,11 @@ button.addEventListener('click', () => {
     }
     
     newGrid(number);
+    hoverSquares();
 })
 
 
-
-// document.querySelector('button').addEventListener('click', () =>{
-//     // delete container
-//     // container.remove();
-//     let container= document.querySelector('#container');
-//     document.querySelector('body').removeChild(container);
-//     // create new container
-//     let newContainer = document.createElement('div');
-//     newContainer.classList.add('container');
-//     //add to body
-//     document.querySelector('body').appendChild(newContainer);
-
-//     newGrid( () => {
-//         let number;
-//         while (true){
-//             number=prompt('How many rows?')
-//             if (number<5 || number > 100){
-//                 alert('Please enter a number between 5 and 100');
-//             }else return number;
-//         }
-//     })
-// })
+newGrid(number); 
 
 // The onmouseenter event is often used together with the onmouseleave event, which occurs when the mouse pointer leaves an element.
 
