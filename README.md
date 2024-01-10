@@ -18,5 +18,7 @@ Nächste Schritte:
 
 
 Bonus:
-- CSS über DOM Manipulation hinzufügen
+- CSS über DOM Manipulation hinzufügen (Grid Erstellung)
+- Ausrichtung Gesamtbild mittig 
+
 
