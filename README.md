@@ -8,10 +8,15 @@ Nächste Schritte:
 - Größe für Container fest zuweisen (/)
 - Beispiel Div Mindestgröße festlegen und dass es sich flexibel an Containergröße anpassen soll (/)
 - Div über DOM Manipulation erstellen (/)
-- Algorithmus für 10 x 10 Boxen erstellen
+- Algorithmus für 10 x 10 Boxen erstellen (/)
 
-for i=0; i<16, i++ (column)
-    for j=o; j<16, j++ (lines)
-        add one div 
+- Event Listener für Hover start und Hover-stop implementieren
+- Farbveränderung während hover
 
+
+
+
+
+Bonus:
+- CSS über DOM Manipulation hinzufügen
 
