@@ -2,15 +2,22 @@
     width:  800px;
     height: 800px;
     display: flex;
+    flex-direction: column;
+}
+
+.row{
+    flex: 1;
+    display: flex;
+    /* height: auto; */
 }
 
 .sqaure{
-    height: 50px;
-    width: 50px;
+    /* height: 50px;
+    width: 50px; */
     border-color: black;
     background-color: rgb(226, 226, 226);
     border: 3px solid red;
     flex: 1;
-    flex-basis: fit-content;
-    height: auto;
+    /* flex-basis: fit-content; */
+    /* height: auto; */
 }
