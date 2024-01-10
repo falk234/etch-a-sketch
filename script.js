@@ -28,24 +28,23 @@ const hoverSquares = () => {
 }
 
 button.addEventListener('click', () => {
-    console.log("Funktioniert!");
-    document.querySelector('#container').remove();
-    let newContainer = document.createElement('div');
-    newContainer.setAttribute('id','container');
-    document.querySelector('body').appendChild(newContainer);
-
     let number=0;
     while (true){
     number = prompt('Please enter a number between 5 and 100');
         if (number >= 5 && number <=100 || number==undefined) break;
     }
-    
+    if (number == undefined) return 0; //if prompt has been closed, do nothing
+    document.querySelector('#container').remove();
+    let newContainer = document.createElement('div');
+    newContainer.setAttribute('id','container');
+    document.querySelector('body').appendChild(newContainer);  
     newGrid(number);
     hoverSquares();
 })
 
 
-newGrid(number); 
+newGrid(number);
+hoverSquares();
 
 // The onmouseenter event is often used together with the onmouseleave event, which occurs when the mouse pointer leaves an element.
 
