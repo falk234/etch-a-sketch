@@ -11,13 +11,11 @@
     /* height: auto; */
 }
 
-.sqaure{
+.square{
     /* height: 50px;
     width: 50px; */
     border-color: black;
-    background-color: rgb(226, 226, 226);
-    border: 3px solid red;
+    background-color: #dfdbdb;
+    border: 1px solid grey;
     flex: 1;
-    /* flex-basis: fit-content; */
-    /* height: auto; */
 }
