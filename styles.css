@@ -1,6 +1,7 @@
 #container{
     width:  800px;
     height: 800px;
+    display: flex;
 }
 
 .sqaure{
@@ -9,4 +10,7 @@
     border-color: black;
     background-color: rgb(226, 226, 226);
     border: 3px solid red;
+    flex: 1;
+    flex-basis: fit-content;
+    height: auto;
 }
